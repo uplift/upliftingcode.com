@@ -1,0 +1,306 @@
+{
+    "General": [
+        {
+            "url": "http://caniuse.com/",
+            "title": "Can I Use"
+        },
+        {
+            "url": "http://dochub.io",
+            "title": "DocHub"
+        },
+        {
+            "url": "http://devdocs.io/",
+            "title": "DevDocs"
+        },
+        {
+            "url": "http://taitems.github.io/Front-End-Development-Guidelines/",
+            "title": "Frontend Development Guidelines"
+        },
+        {
+            "url": "http://bonsaiden.github.io/JavaScript-Garden/",
+            "title": "Javascript Garden"
+        },
+        {
+            "url": "http://taligarsiel.com/Projects/howbrowserswork1.htm",
+            "title": "How Browsers Work"
+        }
+    ],
+    "Podcasts": [
+        {
+            "url": "http://javascriptjabber.com/",
+            "title": "Javascript Jabber (Javascript)"
+        },
+        {
+            "url": "http://css-tricks.com/video-screencasts/",
+            "title": "CSS Tricks (CSS)"
+        },
+        {
+            "url": "http://www.happymondaypodcast.com/",
+            "title": "Happy Monday (Design)"
+        },
+        {
+            "url": "http://nodeup.com/",
+            "title": "NodeUp (Node.js)"
+        }
+    ],
+    "Javascript": {
+        "General": [
+            {
+                "url": "http://jstherightway.org/",
+                "title": "JS The Right Way"
+            },
+            {
+                "url": "http://dailyjs.com/",
+                "title": "Daily JS"
+            },
+            {
+                "url": "http://superherojs.com/",
+                "title": "Superhero JS"
+            },
+            {
+                "url": "http://jsbooks.revolunet.com/",
+                "title": "JS Books"
+            }
+        ],
+        "Best Practice": [
+            {
+                "url": "http://addyosmani.com/largescalejavascript/",
+                "title": "Large Scale Javascript Applications"
+            },
+            {
+                "url": "http://addyosmani.com/writing-modular-js/",
+                "title": "Writing Modular JS"
+            },
+            {
+                "url": "http://shichuan.github.io/javascript-patterns/",
+                "title": "Javascript Patterns"
+            },
+            {
+                "url": "http://addyosmani.com/resources/essentialjsdesignpatterns/book/",
+                "title": "Learning Javascript Design Patterns"
+            },
+            {
+                "url": "http://peter.michaux.ca/articles/mvc-architecture-for-javascript-applications",
+                "title": "MVC Architecture for Javascript Applications"
+            }
+        ],
+        "Testing": [
+            {
+                "url": "http://blog.codeship.io/2014/01/22/testing-frontend-javascript-code-using-mocha-chai-and-sinon.html",
+                "title": "Testing your Frintend Javascript code using Mocha, Chai and Sinon"
+            }
+        ],
+        "Debugging": [
+            {
+                "url": "https://github.com/paulirish/devtools-addons/wiki/Snippets",
+                "title": "Devtool Snippets by Paul Irish"
+            },
+            {
+                "url": "http://bgrins.github.io/devtools-snippets/",
+                "title": "Collection of Devtool Snippets"
+            }
+        ],
+        "Learning Angular JS": [
+            {
+                "url": "http://www.thinkster.io/angularjs/GtaQ0oMGIl/a-better-way-to-learn-angularjs",
+                "title": "A Better Way To Learn AngularJS"
+            },
+            {
+                "url": "https://egghead.io/technologies/angularjs",
+                "title": "AngularJs Lessons by egghead.io"
+            }
+        ]
+    },
+    "Javascript Frameworks": {
+        "General":[
+            {
+                "url": "http://todomvc.com/",
+                "title": "Todo MVC (One Todo App, too many choices)"
+            },
+            {
+                "url": "http://backbonejs.org/",
+                "title": "Backbone JS"
+            },
+            {
+                "url": "https://angularjs.org/",
+                "title": "Angular JS"
+            },
+            {
+                "url": "http://emberjs.com/",
+                "title": "Ember JS"
+            },
+            {
+                "url": "http://facebook.github.io/react/index.html",
+                "title": "React JS"
+            }
+        ],
+        "Utilities":[
+            {
+                "url": "http://jquery.com/",
+                "title": "jQuery (DOM Manipulation and more)"
+            },
+            {
+                "url": "http://underscorejs.org/",
+                "title": "Underscore JS (Functional and Utility Helpers)"
+            },
+            {
+                "url": "http://lodash.com/",
+                "title": "Lodash (Functional and Utility Helpers - API compatible with Underscore JS and more)"
+            },
+            {
+                "url": "http://momentjs.com/",
+                "title": "Moment JS (Date Manipulation)"
+            },
+            {
+                "url": "http://handlebarsjs.com/",
+                "title": "Handlebars JS (Templating)"
+            },
+            {
+                "url": "http://filamentgroup.com/code/",
+                "title": "Filament Group Open Source modules"
+            }
+        ],
+        "Modules":[
+            {
+                "url": "http://requirejs.org/",
+                "title": "Require JS (AMD)"
+            },
+            {
+                "url": "http://browserify.org/",
+                "title": "browserify (Node Modules)"
+            }
+        ],
+        "Testing":[
+            {
+                "url": "http://visionmedia.github.io/mocha/",
+                "title": "Mocha Test Runner"
+            },
+            {
+                "url": "http://karma-runner.github.io/0.12/index.html",
+                "title": "Karma Test Runner"
+            },
+            {
+                "url": "http://chaijs.com/",
+                "title": "Chai JS (Assertion Library)"
+            },
+            {
+                "url": "http://sinonjs.org/",
+                "title": "Sinon JS (Mocking Framework)"
+            },
+            {
+                "url":"http://cukes.info/",
+                "title":"Cucumber BDD"
+            },
+            {
+                "url": "http://webdriver.io/",
+                "title": "Web Driver"
+            }
+        ]
+    },
+    "CSS": {
+        "General": [
+            {
+                "url": "http://css-tricks.com/",
+                "title": "CSS Tricks"
+            }
+        ],
+        "Preprocessors": [
+            {
+                "url": "http://sass-lang.com/",
+                "title": "SASS"
+            },
+            {
+                "url": "http://learnboost.github.io/stylus/",
+                "title": "Stylus"
+            },
+            {
+                "url": "http://lesscss.org/",
+                "title": "Less"
+            }
+        ]
+    },
+    "CSS Frameworks": {
+        "CSS": [
+            {
+                "url": "http://necolas.github.io/normalize.css/",
+                "title": "Normalize.css"
+            },
+            {
+                "url": "http://getbootstrap.com/",
+                "title": "Bootstrap"
+            }
+        ],
+        "SASS": [
+            {
+                "url": "http://bourbon.io/",
+                "title": "Bourbon"
+            },
+            {
+                "url": "http://compass-style.org/",
+                "title": "Compass"
+            }
+        ]
+    },
+    "HTML": [
+        {
+            "url": "http://www.html5rocks.com/en/",
+            "title": "HTML5 Rocks"
+        },
+        {
+            "url":"http://diveintohtml5.info/",
+            "title":"Dive Into HTML5"
+        }
+    ],
+    "Web Components": [
+        {
+            "url":"http://webcomponents.org/",
+            "title":"WebComponents.org"
+        },
+        {
+            "url":"http://christianheilmann.com/2014/04/18/web-components-and-you-dangers-to-avoid/",
+            "title":"Web Components and the dangers to avoid"
+        },
+        {
+            "url":"http://www.polymer-project.org/",
+            "title":"Polymer Project"
+        },
+        {
+            "url":"http://www.x-tags.org/",
+            "title":"X-Tag"
+        }
+    ],
+    "Git": [
+        {
+            "url":"http://git-scm.com/book",
+            "title":"Pro Git Book"
+        },
+        {
+            "url":"http://nvie.com/posts/a-successful-git-branching-model/",
+            "title":"A successful Git branching model"
+        }
+    ],
+    "Build Tools": [
+        {
+            "url":"http://gruntjs.com/",
+            "title":"Grunt"
+        },
+        {
+            "url":"http://gulpjs.com/",
+            "title":"Gulp"
+        }
+    ],
+    "Other Tools": [
+        {
+            "url":"http://yeoman.io/",
+            "title":"Yeoman (Scaffolding tool)"
+        },
+        {
+            "url":"https://www.npmjs.org/",
+            "title":"NPM (Node/Javascript package manager)"
+        },
+        {
+            "url":"http://bower.io/",
+            "title":"Bower (Frontend package manager)"
+        }
+    ]
+}
