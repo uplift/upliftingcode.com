@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+    <head>
+        {{> headIncludes }}
+        {{> styleIncludes }}
+        <link rel="stylesheet" href="/{{ fingerprint.[css/highlight.css] }}" type="text/css" />
+    </head>
+    <body class="post">
+        {{> banner }}
+        {{> header }}
+        <div class="content inline-block">
+            <div class="section article">
+                <h2>{{ title }}</h2>
+                <p class="tags">{{{buildTagList tags ", "}}}</p>
+                {{{ contents }}}
+                <p class="published">{{date}}</p>
+            </div>
+            {{#gt related.length 0}}
+            <div class="related">
+                <h3>Related Articles</h3>
+                <ul class="link-list">
+                {{#each related}}
+                    <li><a href="/{{this.path}}">{{this.title}}</a></li>
+                {{/each}}
+                </ul>
+            </div>
+            {{/gt}}
+            <div class="comments">
+                <div id="disqus_thread"></div>
+                <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                <div class="align-right"><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a></div>
+            </div>
+        </div>
+        {{> right }}
+        {{> footer }}
+        {{> scriptIncludes }}
+        <script src="/scripts/disqus.js"></script>
+        <script>
+            var disqus_identifier='{{ title }}',disqus_url=window.location.toString();(function(d){var c=d.createElement('script');c.async=1;c.src='http://'+disqus_shortname+'.disqus.com/embed.js';d.getElementsByTagName('body')[0].appendChild(c);})(document);
+        </script>
+    </body>
+</html>

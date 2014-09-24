@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+    <head>
+        {{> headIncludes }}
+        {{> styleIncludes }}
+    </head>
+    <body>
+        {{> banner }}
+        {{> header }}
+        <div class="content inline-block">
+            <div class="section toolbox">
+                {{{contents}}}
+                {{#each toolbox}}
+                    <a name="{{@key}}"></a>
+                    <h3>{{@key}}</h3>
+                    {{#isObject this}}
+                        {{#each this}}
+                            <h4>{{@key}}</h4>
+                            <ul>
+                            {{#each this}}
+                            <li><a href="{{this.url}}">{{this.title}}</a></li>
+                            {{/each}}
+                            </ul>
+                        {{/each}}
+                    {{else}}
+                        <ul>
+                        {{#each this}}
+                            <li><a href="{{this.url}}">{{this.title}}</a></li>
+                        {{/each}}
+                        </ul>
+                    {{/isObject}}
+                {{/each}}
+            </div>
+        </div>
+        {{> right }}
+        {{> footer }}
+        {{> scriptIncludes }}
+    </body>
+</html>

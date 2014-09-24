@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+    <head>
+        {{> headIncludes }}
+        {{> styleIncludes }}
+    </head>
+    <body>
+        {{> banner }}
+        {{> header }}
+        <div class="content inline-block">
+            <div class="section about">
+            <h2>About</h2>
+            {{{ contents }}}
+            </div>
+        </div>
+        {{> right }}
+        {{> footer }}
+        {{> scriptIncludes }}
+    </body>
+</html>

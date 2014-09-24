@@ -1,0 +1,16 @@
+<div class="right-column inline-block">
+    <div class="align-center module">
+        <div class="badge"><a href="http://www.twitter.com/uplift5"><img src="http://twitter-badges.s3.amazonaws.com/follow_me-a.png" alt="Follow uplift5 on Twitter"/></a></div>
+    </div>
+    <div class="align-center module">
+        <h3>Promotion</h3>
+        <a href='https://developer.mozilla.org/en/JavaScript/Guide' title='JS Tutorial'><img src='http://static.jsconf.us/promotejsh.gif' height='150' width='180' alt='JS Tutorial'/></a>
+    </div>
+    <div class="align-center module">
+        <p class="tag-cloud">
+        {{#each cloud}}
+            <a href="/blog/tag/{{this.slug}}/" style="font-size: {{this.size}}%;">{{this.tagName}}</a>,
+        {{/each}}
+        </p>
+    </div>
+</div>
