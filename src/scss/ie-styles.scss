@@ -1,0 +1,17 @@
+@media screen  {
+    .banner             {
+                            display: none;
+                        }
+    .site-title         {
+                            font-size: 400%;
+                            margin: 10px 0 15px 0;
+                            text-align: center;
+                            a {
+                                color: #000;
+                                text-decoration: none;
+                            }
+                        }
+    .right-column       {
+                            margin: 10px 0 0 0;
+                        }
+}

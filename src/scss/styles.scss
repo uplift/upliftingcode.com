@@ -1,0 +1,19 @@
+@import "partials/variables";
+@import "partials/mixins";
+
+// Reset and dependencies
+@import "partials/normalize";
+
+// Bootstrap
+@import "partials/bootstrap/variables";
+@import "partials/bootstrap/mixins/alerts";
+@import "partials/bootstrap/alerts";
+
+// Old styles to sort
+@import "partials/reset";
+@import "partials/font";
+@import "partials/components";
+@import "partials/small";
+@import "partials/medium";
+@import "partials/large";
+@import "partials/print";

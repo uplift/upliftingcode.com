@@ -1,0 +1,22 @@
+@media screen {
+    html            {
+                        /*the overflow declaration is to make sure there is a gutter for the scollbar in all browsers regardless of content */
+                        overflow-y: scroll
+                    }
+    a               {
+                        text-decoration: none;
+                    }
+    ul, ol          {
+                        list-style: none
+                    }
+    img             {
+                        /* to prevent a gap from showing below images in some browsers */
+                        vertical-align: bottom
+                    }
+    /* Have tables with collapsable borders and no padding - No more doubling up of borders between elements */
+    table           {
+                        /* Still requires cellspacing="0" in markup :( */
+                        border: none;
+                        width:100%
+                    }
+}

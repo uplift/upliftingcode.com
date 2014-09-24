@@ -1,0 +1,192 @@
+@media screen and (min-width: 1024px) {
+    html {
+        background: #c7c7c7;
+    }
+    body {
+        background: #fff;
+        border-right: 1px solid #aaa;
+        border-left: 1px solid #aaa;
+        margin: 0 auto;
+        padding: 10px 0 0 0;
+        position: relative;
+        width: 990px;
+        z-index: 999;
+        @include box-shadow(0 1px 20px rgba(0, 0, 0, 0.6));
+    }
+    /* Banner */
+    .banner {
+        position: fixed;
+        top: 0;
+        left: auto;
+        background: #7f9db9;
+        margin-left: -25px;
+        padding: 0 30px;
+        z-index: 9000;
+        @include border-radius(6px);
+        @include box-sizing(border-box);
+        @include box-shadow(0 1px 4px rgba(0,0,0,0.6));
+        @include size(1040px 33px);
+    }
+    .banner:before {
+        border-color: transparent #7d90a3 transparent transparent;
+        left: -19px;
+    }
+    .banner:after {
+        border-color: transparent transparent transparent #7d90a3;
+        left: 1016px;
+    }
+    .banner:before,
+    .banner:after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        border-style: solid;
+        border-width: 22px;
+        border-top-width: 0;
+        border-bottom-width: 20px;
+        bottom: -20px;
+        @include size(0 0);
+    }
+    .header {
+        padding-left: 20px;
+        margin: 30px 0 0;
+    }
+    .site-title {
+        margin: 0;
+        width: 40%;
+        display: inline-block;
+        vertical-align: top;
+        a {
+            color: #444;
+            text-shadow: #999 4px 4px 4px;
+            .ie9 & {
+                zoom: 1;
+                filter: progid:DXImageTransform.Microsoft.Blur(pixelradius=4);
+                color: #ccc;
+                &:before {
+                    color: #444;
+                    content: 'upliftingcode';
+                    position: absolute;
+                    margin: -4px 0 0 -4px;
+                }
+            }
+        }
+    }
+    /* Navigation */
+    .nav {
+        line-height: 80px;
+        margin: 0;
+        display: inline-block;
+        vertical-align: top;
+        @include size(60% 85px);
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            display: inline-block;
+        }
+        a  {
+            color: #000;
+        }
+    }
+    .nav a:hover,
+    .nav-selected a {
+        color: #000;
+        text-shadow: #E3002A 0 1px 15px;
+        .ie9 & {
+            color: #E3002A !important;
+        }
+    }
+    /* Content */
+    .content {
+        margin: 15px;
+        margin-right: 40px;
+        width: 74%;
+    }
+    .section {
+        border: 1px solid #bbb;
+        margin:10px 10px 20px;
+        padding:14px;
+        @include border-radius(4px);
+        &:after {
+            content:"";
+            position:absolute;
+            z-index:-2;
+            max-width:300px;
+            right:10px;
+            left:auto;
+            bottom:15px;
+            @include transform(rotate(3deg));
+            @include box-shadow(0 15px 10px rgba(0, 0, 0, 0.7));
+            @include size(50% 10%);
+        }
+    }
+    .article {
+        padding-bottom: 50px;
+    }
+    .tags {
+        margin-top : 0;
+        a {
+            font-size: 93%;
+        }
+    }
+    .published {
+        color: #fff;
+        font-weight: bold;
+        position: absolute;
+        background: #EF413E;
+        right: -15px;
+        bottom: 8px;
+        padding: 5px 25px 5px 15px;
+        @include border-radius(8px 0 8px 8px);
+        &:after    {
+            content:"";
+            position:absolute;
+            z-index: 100;
+            border-style:solid;
+            border-width:15px;
+            border-top-width: 20px;
+            border-bottom-width: 0;
+            top: -20px;
+            border-color: transparent transparent transparent #AD1F26;
+            right: -15px;
+            @include size(0 0);
+        }
+    }
+    .comment-count {
+        left: 15px;
+    }
+    .tag-list ul {
+        padding-left: 40px;
+    }
+    /* Right Column */
+    .right-column {
+        width: 190px;
+        background: #eee;
+        padding: 0 5px;
+        border-left: 1px solid #ccc;
+        border-bottom: 1px solid #999;
+        border-top: none;
+        display: inline-block;
+        &:after {
+            border-bottom: 1px solid #bbb;
+            @include size(200px 1px);
+        }
+        h3 {
+            color: #fff;
+            font-weight: normal;
+            text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 6px #fff, 0 0 8px #e3002a, 0 0 14px #e3002a, 0 0 16px #e3002a, 0 0 20px #e3002a, 0 0 30px #e3002a;
+            letter-spacing: 3.5px;
+            .ie9 & {
+                color: #E3002A;
+                letter-spacing: 2.5px;
+            }
+        }
+        .module:first-child {border-top: none;}
+        .module:last-child {border-bottom: none;}
+    }
+    .module {
+        padding: 10px 5px;
+    }
+}

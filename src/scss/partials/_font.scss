@@ -1,0 +1,27 @@
+@media screen   {
+    body            {
+                        font:13px/1.231 sans-serif;
+                        line-height:1.4
+                    }
+    /* h1              {
+                        font-size:145%
+                    }
+    h2              {
+                        font-size:137%;
+                    }
+    h3              {
+                        font-size:116%
+                    } */
+    select,
+    input,
+    button,
+    textarea        {
+                        font:99% Arial,Sans-Serif
+                    }
+    strong, b       {
+                        font-weight: bold
+                    }
+    em, i           {
+                        font-style: italic
+                    }
+}

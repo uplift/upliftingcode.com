@@ -1,0 +1,73 @@
+@media only screen and (min-width: 480px) {
+    .tags a             {
+        font-size: 93%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* Banner */
+    .banner {
+        display: block;
+        background: #7f9db9;
+        height: 33px;
+        padding: 0 15px;
+        z-index: 9000;
+        @include box-sizing(border-box);
+    }
+    .social-icons-container {
+        display: block;
+    }
+    .social-icon {
+        position: relative;
+        z-index: 9999;
+        padding: 5px 3px;
+        &:hover {
+            @include transition(all 0.8s ease);
+            @include transform(rotate(360deg));
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            border-bottom: 10px solid #444;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            opacity: 0;
+            left: 5px;
+            bottom: 150%;
+            z-index: 9950;
+            @include transition(opacity 0.4s ease);
+            @include size(0 0);
+        }
+        &:hover:before {
+            bottom: -8px;
+            opacity: 1;
+        }
+        &:after {
+            content: attr(data-tooltip);
+            position: absolute;
+            left: -90px;
+            bottom: 150%;
+            background: #444;
+            padding: 5px 15px;
+            color: #fff;
+            white-space: nowrap;
+            opacity: 0;
+            z-index: 9950;
+            @include border-radius(10px);
+            @include transition(opacity 0.4s ease);
+        }
+        &:hover:after {
+            bottom: -33px;
+            opacity: 1;
+        }
+    }
+    /* Navigation */
+    .nav li {
+        font-size: 136%;
+    }
+    /* Site Header */
+    .site-title {
+        font-size: 400%;
+        margin: 5px 0 15px;
+    }
+}
