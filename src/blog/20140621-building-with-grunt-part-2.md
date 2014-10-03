@@ -225,7 +225,7 @@ One final bit of tidying up we can do is to move the list of ignore patterns use
 
 That completes the end of part 2 and should show you how to produce documentation and copy files as well as clean up previous build files and writing a cleaner Gruntfile.
 
-I will post part 3 shortly to carry on with the main build tasks.
+I will post [part 3](/blog/2014/10/building-with-grunt-part-3/) shortly to carry on with the main build tasks.
 
 **Update (12/08/2014):** Added code to [github](https://github.com/uplift/building-with-grunt) so article is easier to follow along with. Fork it and let me know if you have any tips or tricks for improving this project.
 
