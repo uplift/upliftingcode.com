@@ -140,7 +140,7 @@ The output should now show the same output as running `grunt jshint`
 
 That completes the end of part 1 and should show you how to create a basic Gruntfile, install the grunt modules and add a simple task to lint Javascript files with JSHint. Try adding some of the other linter's mentioned above to the Gruntfile.
 
-I will post part 2 shortly to carry on through the list of tasks for our front end application.
+I will post [part 2](/blog/2014/06/building-with-grunt-part-2/) shortly to carry on through the list of tasks for our front end application.
 
 **Update (06/08/2014):** Added code to [github](https://github.com/uplift/building-with-grunt) so article is easier to follow along with.
 
