@@ -1,11 +1,7 @@
 [
     {
         "name": "blog",
-        "path": ""
-    },
-    {
-        "name": "about",
-        "path": "about"
+        "path": "posts"
     },
     {
         "name": "developers-toolbox",
