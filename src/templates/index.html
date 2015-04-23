@@ -3,35 +3,75 @@
 <!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
     <head>
         {{> headIncludes }}
-        {{> styleIncludes }}
+        <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="/{{ fingerprint.[css/home-styles.css] }}" type="text/css" />
+        <!--<![endif]-->
     </head>
-    <body class="home">
-        {{> banner }}
-        {{> header }}
-        <div class="content inline-block">
-            {{#limit collections.posts 5}}
-                <div class="section article">
-                    <h2><a href="/{{this.path}}">{{this.title}}</a></h2>
-                    <p class="tags">{{{buildTagList tags ", "}}}</p>
-                    {{{this.excerpt}}}
-                    <div class="published">Posted: {{this.date}}</div>
-                    <a class="comment-count" href="/{{this.path}}#disqus_thread" data-disqus-identifier="{{ this.title }}"></a>
-                </div>
-            {{/limit}}
-            {{#gt collections.posts.length 5}}
-            <div class="recent">
-                <h4>Recent Articles</h4>
-                <ul class="link-list">
-                {{#limit collections.posts 5 10}}
-                    <li><a href="/{{this.path}}">{{this.title}}</a></li>
-                {{/limit}}
-                </ul>
+    <body>
+        <div class="container">
+            <h1 class="title"></h1>
+            <h2 class="sub-title"><em>deciphering the web one variable at a time</em></h2>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="/posts">
+                        <span class="icon blog-icon">&lt;/&gt;</span> Blog
+                    </a>
+                </li>
+                <li class="nav-item spacing">
+                    <a href="https://github.com/uplift?tab=repositories">
+                        <span class="icon project-icon">{}</span> Projects
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/developers-toolbox">
+                        <span class="icon toolbox-icon">()</span> Toolbox
+                    </a>
+                </li>
+            </ul>
+            <div class="module">
+                <div class="well well-one">Who are we?</div>
+                <div class="content-box">We are enthusiastic front end developers, based in the Midlands UK, that love creating intuitive user interfaces with beautiful code to back it up. The two shouldn't be mutually exclusive and we can't live without either.</div>
             </div>
-            {{/gt}}
+            <div class="module">
+                <div class="well well-two">What we do?</div>
+                <div class="content-box">We specialize in front end development. Javascript, CSS, HTML and all the tooling needed to create small websites to complex single page applications. We've even be known to create RESTful APIs from time to time too.</div>
+            </div>
+            <div class="module">
+                <div class="well well-three">Expertise</div>
+                <div class="content-box">
+                    <div class="skill">Javascript <img src="/images/tick.png"></div>
+                    <div class="skill">CSS <img src="/images/tick.png"></div>
+                    <div class="skill">HTML <img src="/images/tick.png"></div>
+                    <div class="skill">Single Page Applications <img src="/images/tick.png"></div>
+                    <div class="skill">Node.js <img src="/images/tick.png"></div>
+                    <div class="skill">Express.js <img src="/images/tick.png"></div>
+                    <div class="skill">Backbone.js <img src="/images/tick.png"></div>
+                    <div class="skill">Angular.js <img src="/images/tick.png"></div>
+                    <div class="skill">Underscore.js/Lodash <img src="/images/tick.png"></div>
+                    <div class="skill">jQuery <img src="/images/tick.png"></div>
+                    <div class="skill">Handlebars Templating <img src="/images/tick.png"></div>
+                    <div class="skill">SASS <img src="/images/tick.png"></div>
+                    <div class="skill">Grunt <img src="/images/tick.png"></div>
+                    <div class="skill">Gulp <img src="/images/tick.png"></div>
+                    <div class="skill">AMD/CommonJS <img src="/images/tick.png"></div>
+                    <div class="skill">Unit Testing <img src="/images/tick.png"></div>
+                    <div class="skill">Karma <img src="/images/tick.png"></div>
+                    <div class="skill">Mocha <img src="/images/tick.png"></div>
+                    <div class="skill">Chai.js <img src="/images/tick.png"></div>
+                    <div class="skill">Sinon <img src="/images/tick.png"></div>
+                    <div class="skill">RESTful API Design <img src="/images/tick.png"></div>
+                    <div class="skill">Content Management Systems <img src="/images/tick.png"></div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer-text">upliftingcode ©</div>
+                <div class="badges">
+                    <iframe src="https://ghbtns.com/github-btn.html?user=uplift&amp;type=follow&amp;count=false" scrolling="0" frameborder="0" style="width: 120px; height: 20px;"></iframe>
+                    <a href="https://twitter.com/upliftingcode" class="twitter-follow-button" data-show-count="false">Follow @upliftingcode</a>
+                </div>
+            </div>
         </div>
-        {{> right }}
-        {{> footer }}
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
         {{> scriptIncludes }}
-        <script src="/scripts/disqus.js"></script>
     </body>
 </html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+    <head>
+        {{> headIncludes }}
+        {{> styleIncludes }}
+    </head>
+    <body class="home">
+        {{> banner }}
+        {{> header }}
+        <div class="content inline-block">
+            {{#limit collections.posts 5}}
+                <div class="section article">
+                    <h2><a href="/{{this.path}}">{{this.title}}</a></h2>
+                    <p class="tags">{{{buildTagList tags ", "}}}</p>
+                    {{{this.excerpt}}}
+                    <div class="published">Posted: {{this.date}}</div>
+                    <a class="comment-count" href="/{{this.path}}#disqus_thread" data-disqus-identifier="{{ this.title }}"></a>
+                </div>
+            {{/limit}}
+            {{#gt collections.posts.length 5}}
+            <div class="recent">
+                <h4>Recent Articles</h4>
+                <ul class="link-list">
+                {{#limit collections.posts 5 10}}
+                    <li><a href="/{{this.path}}">{{this.title}}</a></li>
+                {{/limit}}
+                </ul>
+            </div>
+            {{/gt}}
+        </div>
+        {{> right }}
+        {{> footer }}
+        {{> scriptIncludes }}
+        <script src="/scripts/disqus.js"></script>
+    </body>
+</html>
