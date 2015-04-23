@@ -1,0 +1,161 @@
+@import "partials/variables";
+@import "partials/mixins";
+
+// Reset and dependencies
+@import "partials/normalize";
+
+// TO SORT
+html, body {
+    color: #444;
+    min-width: 320px;
+    max-width: 1900px;
+    padding: 0; margin: 0 auto; background: #ccc; line-height: 1.4;
+}
+a {
+    display: block; text-decoration: none; color: #444;
+}
+.container {
+    background: none repeat scroll 0% 0% rgb(255, 255, 255); border-top: 3px solid rgb(0, 0, 0);
+}
+.title {
+    text-align: center; margin-bottom: 0px; margin-top: 15px; padding-top: 30px; width: 100%; height: 67px; background: url(/images/main-small.png) no-repeat center center transparent;
+}
+.sub-title {
+    font-style: italic; font-size: 1em; padding: 0px; margin: 0px 0px 1em; text-align: center; color: rgb(68, 68, 68);
+}
+.nav-list {
+    border-top: 1px solid rgb(153, 153, 153); border-bottom: 1px solid rgb(153, 153, 153); background:lightblue; padding: 30px 1%; margin: 0;
+}
+.nav-item {
+    display: block; width: 100%; border: 1px solid rgb(51, 51, 51); font-size: 1.5em; text-align: center; color: rgb(68, 68, 68); background: rgb(255, 255, 255); box-sizing: border-box;
+}
+.nav-item a {
+    padding: 20px 50px 20px 15px;
+}
+.nav-item:first-child a {
+    padding-right: 80px;
+}
+.nav-item a:hover {
+    background: #FFD9D6;
+}
+.spacing {
+    margin: 1% 0;
+}
+.icon {
+    vertical-align: middle; font-size: 1.5em; margin-right: 20px;
+}
+.toolbox-icon {
+    color: orange;
+}
+.blog-icon {
+    color: blue;
+}
+.project-icon {
+    color: red;
+}
+.module {
+    border-bottom: 1px solid rgb(153, 153, 153); padding: 30px 1%;
+}
+.well {
+     display: block; box-sizing: border-box; width: 100%; color: #444; margin-left: 5px; padding: 12px 20px; font-weight: bold; font-size: 1.2em;
+}
+.well-one {
+    border-left: 8px solid blue;
+}
+.well-two {
+    border-left: 8px solid red;
+}
+.well-three {
+    border-left: 8px solid orange;
+}
+.content-box {
+    padding: 15px 5px 0px; color: #444;
+}
+.skill {
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid #FCB514;
+    background: #FFF68F;
+    border-radius: 5px;
+    min-width: 100px;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    margin: 10px;
+    text-align: center;
+}
+.skill img {
+    margin-left: 8px;
+    vertical-align: text-bottom;
+}
+.footer {
+    background: rgb(204, 204, 204); padding: 10px; border-top: 1px solid rgb(0, 0, 0); height: 40px;
+}
+.footer-text {
+    text-align: center; font-size: 0.8em; color: rgb(68, 68, 68); font-style: italic;
+}
+.badges {
+    text-align: center; margin-top: 10px;
+}
+@media screen and (min-width: 670px) {
+    .title {
+        margin-top: 20px; padding-top: 40px; height: 136px; background: url(/images/main-medium.png) no-repeat center center transparent;
+    }
+    .sub-title {
+        font-size: 1.5em;
+    }
+    .nav-item {
+        display: inline-block; width: 32%; border: 1px solid rgb(51, 51, 51); font-size: 2em; box-sizing: border-box;
+    }
+    .nav-item a {
+        padding: 30px 15px;
+    }
+    .nav-item:first-child a {
+        padding-right: 15px;
+    }
+    .spacing {
+        margin: 0px 2%;
+    }
+}
+@media screen and (min-width: 800px) {
+    .module {
+        display: table; width: 98%;
+    }
+    .well {
+         display: table-cell; box-sizing: border-box; width: 25%; color: #444; text-align: center; border-radius: 8px 0 0 8px; margin: 0; font-size: 1.6em; border: none; vertical-align: middle;
+    }
+    .well-one {
+        background: #B8C8FF;
+        border: 1px solid blue;
+    }
+    .well-two {
+        background: #FFB8B8;
+        border: 1px solid red;
+    }
+    .well-three {
+        background: #FFE6AB;
+        border: 1px solid orange;
+    }
+    .content-box {
+        display: table-cell; box-sizing: border-box; text-align: center; vertical-align: top; font-size: 1.2em; width: 75%; background: #ddd; border-radius: 0px 8px 8px 0px; border: 1px solid #999; border-left: none; padding: 15px; background: #eee;
+    }
+}
+@media screen and (min-width:1024px) {
+    .title {
+        margin-top: 25px; padding-top: 50px; height: 175px; background: url(/images/main.png) no-repeat center center transparent;
+    }
+    .sub-title {
+        font-size: 2em;
+    }
+    .icon {
+        font-size: 3em; margin-right: 30px;
+    }
+    .well {
+         width: 15%;
+    }
+    .content-box {
+        width: 85%;
+    }
+    .footer {
+        padding: 10px;
+    }
+}
