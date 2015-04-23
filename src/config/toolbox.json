@@ -87,7 +87,7 @@
         "Testing": [
             {
                 "url": "http://blog.codeship.io/2014/01/22/testing-frontend-javascript-code-using-mocha-chai-and-sinon.html",
-                "title": "Testing your Frintend Javascript code using Mocha, Chai and Sinon"
+                "title": "Testing your Frontend Javascript code using Mocha, Chai and Sinon"
             }
         ],
         "Debugging": [
